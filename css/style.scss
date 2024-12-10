@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "_null";
 
@@ -170,7 +171,7 @@
 		position: absolute;
 		display: flex;
 		align-self:flex-end;
-		top: 20px;
+		top: 22px;
 	}
 	@media(max-width: 367.89px){
 		right: 30px;
@@ -189,28 +190,148 @@
 	}
 }
 .menu-nav.active,
-    .contactus.active {
+.contactus.active {
         display: flex; /* Відображаємо меню */
         opacity: 1;    /* Робимо видимим */
 		  transform: translateY(0);
 }
 
-	 .menu-nav.hide {
+.menu-nav.hide {
 		opacity: 0;
       transform: translateY(-10px);
       transition: opacity 0.2s ease, transform 0.2s ease;
-  }
+}
 
 .main {
 	position: relative;
-	display: flex;
-	width: 1920px;
-	top: 102.2px;
+	width: 100%;
+	max-width: 1920px;
+	top: 103px;
 	@media(max-width: 1199.89px){
 		top: 62.98px;
 	}
 }
-.test {
+.boost-email {
+	width: 100vw;
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 138.66%);
+
+
+	// .boost-email__container
+
+	&__container {
+		width: 100%;
+		max-width: 1920px;
+		background-image: url(../img/main/Ресурс\ 1\ 1.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size:51% 100%;
+		flex-grow: 1;
+		margin: 0 auto;
+	}
+
+	// .boost-email__block
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 1,920px;
+		padding: 200px 60px 200px 60px;
+		gap: 40px;
+		@media(max-width: 1199.89px){
+			padding: 40px 20px 40px 20px;
+			gap: 20px;
+		}
+
+	}
+
+	// .boost-email__massage
+
+	&__massage {
+	}
+
+	// .boost-email__result
+
+	&__result {
+	}
 }
+.message {
+	max-width: 1,163px;
+	gap: 10px;
+	opacity: 0px;
+
+
+	// .message__title
+
+	&__title {
+		font-family: "Roboto Condensed";
+		font-size: 128px;
+		font-weight: 700;
+		line-height: 150px;
+		text-align: left;
+		@media(max-width: 1199.89px){
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 32.81px;
+			max-width: 255px;
+		}
+
+	}
+
+	// .message__text
+
+	&__text {
+		font-family: "Roboto";
+		font-size: 32px;
+		font-weight: 300;
+		line-height: 37.5px;
+		text-align: left;
+		color: rgba(0, 0, 0, 1);
+		@media(max-width: 1199.89px){
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 16.8px;
+		}
+
+	}
+}
+.red{
+	color: rgba(245, 51, 63, 1);
+}
+
+.result-boost {
+	max-width: 258px;
+	height: 63px;
+	background-color:rgba(245, 51, 63, 1);
+	gap: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	@media(max-width: 1199.89px){
+		width: 185px;
+		height: 46px;
+
+
+	}
+
+	// .result-boost__button
+
+	&__button {
+		font-family: "Roboto";
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 23.44px;
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		padding: 20px 25px 20px 25px;
+		@media(max-width: 1199.89px){
+			padding: 15px 20px 15px 20px;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 16.41px;
+		}
+	}
+}
+
+
 
 

@@ -23,8 +23,8 @@ function toggleMenu() {
             }, 200); // Затримка перед приховуванням інших елементів
         } else {
             // Відкриваємо меню
-            header.style.height = '2800px';
-            headerContainer.style.height = '2800px';
+            header.style.height = '280px';
+            headerContainer.style.height = '280px';
             headerBlock.style.height = '280px'; // Змінюємо висоту header__block
 
             contactUs.classList.add('active'); // Відображаємо contactus

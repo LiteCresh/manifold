@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -211,7 +212,7 @@ body {
     position: absolute;
     display: flex;
     align-self: flex-end;
-    top: 20px;
+    top: 22px;
   }
 }
 @media (max-width: 367.89px) {
@@ -239,12 +240,112 @@ body {
 
 .main {
   position: relative;
-  display: flex;
-  width: 1920px;
-  top: 102.2px;
+  width: 100%;
+  max-width: 1920px;
+  top: 103px;
 }
 @media (max-width: 1199.89px) {
   .main {
     top: 62.98px;
+  }
+}
+
+.boost-email {
+  width: 100vw;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 138.66%);
+}
+.boost-email__container {
+  width: 100%;
+  max-width: 1920px;
+  background-image: url(../img/main/Ресурс\ 1\ 1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 51% 100%;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+.boost-email__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1, 920px;
+  padding: 200px 60px 200px 60px;
+  gap: 40px;
+}
+@media (max-width: 1199.89px) {
+  .boost-email__block {
+    padding: 40px 20px 40px 20px;
+    gap: 20px;
+  }
+}
+.message {
+  max-width: 1, 163px;
+  gap: 10px;
+  opacity: 0px;
+}
+.message__title {
+  font-family: "Roboto Condensed";
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 150px;
+  text-align: left;
+}
+@media (max-width: 1199.89px) {
+  .message__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    max-width: 255px;
+  }
+}
+.message__text {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 37.5px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 1199.89px) {
+  .message__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.8px;
+  }
+}
+
+.red {
+  color: rgb(245, 51, 63);
+}
+
+.result-boost {
+  max-width: 258px;
+  height: 63px;
+  background-color: rgb(245, 51, 63);
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 1199.89px) {
+  .result-boost {
+    width: 185px;
+    height: 46px;
+  }
+}
+.result-boost__button {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 20px 25px 20px 25px;
+}
+@media (max-width: 1199.89px) {
+  .result-boost__button {
+    padding: 15px 20px 15px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
   }
 }/*# sourceMappingURL=style.css.map */
