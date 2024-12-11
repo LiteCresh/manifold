@@ -9,6 +9,8 @@
    flex-grow: 1;
    margin: 0 auto;
    transition: height 0.3s ease, opacity 0.3s ease;
+	z-index: 9999;
+	background-color: #FAFBFF;
 
    @media(max-width: 1199.89px) {
       height: 62.98px;
@@ -204,8 +206,7 @@
 
 .main {
 	position: relative;
-	width: 100%;
-	max-width: 1920px;
+	width: 100vw;
 	top: 103px;
 	@media(max-width: 1199.89px){
 		top: 62.98px;
@@ -239,8 +240,11 @@
 		padding: 200px 60px 200px 60px;
 		gap: 40px;
 		@media(max-width: 1199.89px){
-			padding: 40px 20px 40px 20px;
+			padding: 40px 20px 40px 10%;
 			gap: 20px;
+		}
+		@media(max-width: 659.89px){
+			padding-left: 20px;
 		}
 
 	}
@@ -256,7 +260,7 @@
 	}
 }
 .message {
-	max-width: 1,163px;
+	max-width: 1163px;
 	gap: 10px;
 	opacity: 0px;
 
@@ -306,11 +310,12 @@
 	gap: 10px;
 	border-radius: 5px;
 	cursor: pointer;
+	&:hover{
+		background-color: rgb(114, 114, 114);
+	}
 	@media(max-width: 1199.89px){
 		width: 185px;
 		height: 46px;
-
-
 	}
 
 	// .result-boost__button
@@ -331,6 +336,200 @@
 		}
 	}
 }
+.companys {
+	width: 100vw;
+
+	// .companys__container
+
+	&__container {
+		width: 100%;
+		max-width: 1920px;
+		padding: 40px 60px 40px 60px;
+		gap: 136px;
+		margin: 0 auto;
+		align-self: center;
+		border-top: 1px solid  rgba(209, 209, 209, 1);
+		@media(max-width: 1199.89px){
+		padding: 20px 20px 34.66px 20px;
+		gap: 20px;
+		}
+	}
+
+	// .companys__block
+
+	&__block {
+	}
+}
+.block-company {
+		width: 100%;
+		max-width: 1920px;
+
+
+	// .block-company__items
+
+	&__items {
+		display: flex;
+		width: 100%;
+		max-width: 1920px;
+		flex-wrap: wrap;
+		gap: 96px;
+		margin: 0 auto;
+		justify-content: center;
+		@media(max-width: 1199.89px){
+			gap: 34.66px;
+		}
+	}
+
+	// .block-company__item
+
+	&__item {
+		max-width: 180px;
+		flex: 0 1 33.3%;
+		margin: 0 20px;
+		align-self: center;
+		@media(max-width: 1199.89px){
+			max-width: 70.23px;
+			margin: 0 0 -14.66px 0;
+		}
+	}
+
+	// .block-company__img
+
+	&__img {
+		width: 180px;
+		@media(max-width: 1199.89px){
+			width: 70.23px;
+		}
+	}
+}
+.help {
+	width: 100vw;
+
+	// .help__container
+
+	&__container {
+		width: 100%;
+		max-width: 1920px;
+		padding: 100px 60px 100px 60px;
+		gap: 10px;
+		border-top: 1px solid rgba(209, 209, 209, 1);
+		border-bottom: 1px solid rgba(209, 209, 209, 1);
+		margin: 0 auto;
+		background-color: rgba(250, 250, 250, 1);
+		background-image: url(../img/main/Ресурс\ 1\ 2.png);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 48% 100%;
+		@media(max-width: 1199.89px){
+			padding: 30px 20px 30px 20px;
+			gap: 10px;
+
+		}
+	}
+
+	// .help__block
+
+	&__block {
+	}
+}
+.block-help {
+	width: 100%;
+	max-width: 1805px;
+	padding: 100px 80px 100px 80px;
+	border-radius: 20px;
+	background-color: rgba(33, 33, 33, 1);
+	box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.25);
+	@media(max-width: 1199.89px){
+		padding: 25px 20px 25px 20px;
+		gap: 20px;
+		border-radius: 20px;
+	}
+
+	// .block-help__items
+
+	&__items {
+		display: flex;
+		gap: 136px;
+		@media(max-width: 1661.89px){
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+		@media(max-width: 1199.89px){
+			flex-direction: column;
+		}
+	}
+
+	// .block-help__title
+
+	&__title {
+		max-width: 831px;
+		font-family: "Roboto Condensed";
+		font-size: 128px;
+		font-weight: 700;
+		line-height: 150px;
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		@media(max-width: 1199.89px){
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 32.81px;
+			padding-left: 10%;
+		}
+		@media(max-width: 659.89px){
+			padding-left: 0;
+		}
+	}
+
+	// .block-help__list
+
+	&__list {
+		padding: 30px 119px 30px 0;
+		@media(max-width: 1199.89px){
+			padding: 0;
+		}
+	}
+}
+.list {
+
+	// .list__item
+
+	&__item {
+		font-family: "Roboto";
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 28.13px;
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		&::before{
+			position: relative;
+			width: 10px;
+			height: 10px;
+			align-self: center;
+			margin-right: 10px;
+			top: -3px;
+			content: url(../img/main/pointred.png);
+			@media(max-width: 1199.89px){
+				content: url(../img/main/pointred.png);
+				width: 5px;
+				height: 5px;
+			}
+		}
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+		@media(max-width: 1199.89px){
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 16.8px;
+			padding-left: 10%;
+		}
+		@media(max-width: 659.89px){
+			padding-left: 0;
+		}
+	}
+}
+
+
 
 
 

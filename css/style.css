@@ -57,6 +57,8 @@ body {
   flex-grow: 1;
   margin: 0 auto;
   transition: height 0.3s ease, opacity 0.3s ease;
+  z-index: 9999;
+  background-color: #FAFBFF;
 }
 @media (max-width: 1199.89px) {
   .header {
@@ -240,8 +242,7 @@ body {
 
 .main {
   position: relative;
-  width: 100%;
-  max-width: 1920px;
+  width: 100vw;
   top: 103px;
 }
 @media (max-width: 1199.89px) {
@@ -274,12 +275,17 @@ body {
 }
 @media (max-width: 1199.89px) {
   .boost-email__block {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px 40px 10%;
     gap: 20px;
   }
 }
+@media (max-width: 659.89px) {
+  .boost-email__block {
+    padding-left: 20px;
+  }
+}
 .message {
-  max-width: 1, 163px;
+  max-width: 1163px;
   gap: 10px;
   opacity: 0px;
 }
@@ -326,6 +332,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.result-boost:hover {
+  background-color: rgb(114, 114, 114);
+}
 @media (max-width: 1199.89px) {
   .result-boost {
     width: 185px;
@@ -347,5 +356,187 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 16.41px;
+  }
+}
+
+.companys {
+  width: 100vw;
+}
+.companys__container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 40px 60px 40px 60px;
+  gap: 136px;
+  margin: 0 auto;
+  align-self: center;
+  border-top: 1px solid rgb(209, 209, 209);
+}
+@media (max-width: 1199.89px) {
+  .companys__container {
+    padding: 20px 20px 34.66px 20px;
+    gap: 20px;
+  }
+}
+.block-company {
+  width: 100%;
+  max-width: 1920px;
+}
+.block-company__items {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  flex-wrap: wrap;
+  gap: 96px;
+  margin: 0 auto;
+  justify-content: center;
+}
+@media (max-width: 1199.89px) {
+  .block-company__items {
+    gap: 34.66px;
+  }
+}
+.block-company__item {
+  max-width: 180px;
+  flex: 0 1 33.3%;
+  margin: 0 20px;
+  align-self: center;
+}
+@media (max-width: 1199.89px) {
+  .block-company__item {
+    max-width: 70.23px;
+    margin: 0 0 -14.66px 0;
+  }
+}
+.block-company__img {
+  width: 180px;
+}
+@media (max-width: 1199.89px) {
+  .block-company__img {
+    width: 70.23px;
+  }
+}
+
+.help {
+  width: 100vw;
+}
+.help__container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 100px 60px 100px 60px;
+  gap: 10px;
+  border-top: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
+  margin: 0 auto;
+  background-color: rgb(250, 250, 250);
+  background-image: url(../img/main/Ресурс\ 1\ 2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 48% 100%;
+}
+@media (max-width: 1199.89px) {
+  .help__container {
+    padding: 30px 20px 30px 20px;
+    gap: 10px;
+  }
+}
+.block-help {
+  width: 100%;
+  max-width: 1805px;
+  padding: 100px 80px 100px 80px;
+  border-radius: 20px;
+  background-color: rgb(33, 33, 33);
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1199.89px) {
+  .block-help {
+    padding: 25px 20px 25px 20px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+}
+.block-help__items {
+  display: flex;
+  gap: 136px;
+}
+@media (max-width: 1661.89px) {
+  .block-help__items {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 1199.89px) {
+  .block-help__items {
+    flex-direction: column;
+  }
+}
+.block-help__title {
+  max-width: 831px;
+  font-family: "Roboto Condensed";
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 150px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1199.89px) {
+  .block-help__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 659.89px) {
+  .block-help__title {
+    padding-left: 0;
+  }
+}
+.block-help__list {
+  padding: 30px 119px 30px 0;
+}
+@media (max-width: 1199.89px) {
+  .block-help__list {
+    padding: 0;
+  }
+}
+
+.list__item {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.list__item::before {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  align-self: center;
+  margin-right: 10px;
+  top: -3px;
+  content: url(../img/main/pointred.png);
+}
+@media (max-width: 1199.89px) {
+  .list__item::before {
+    content: url(../img/main/pointred.png);
+    width: 5px;
+    height: 5px;
+  }
+}
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 1199.89px) {
+  .list__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 659.89px) {
+  .list__item {
+    padding-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */
