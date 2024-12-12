@@ -1428,7 +1428,7 @@ body {
   cursor: pointer;
 }
 .email-form__button:hover {
-  color: rgb(114, 114, 114);
+  background-color: rgb(114, 114, 114);
 }
 @media (max-width: 1471.89px) {
   .email-form__button {
