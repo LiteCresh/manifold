@@ -720,6 +720,7 @@ body {
   line-height: 28.13px;
   text-align: left;
   padding-left: 130px;
+  color: rgb(0, 0, 0);
 }
 .goods-company__list-item:nth-child(1)::before {
   content: "Result:";
@@ -869,7 +870,7 @@ body {
   border-top: 1px solid rgb(209, 209, 209);
   border-bottom: 1px solid rgb(209, 209, 209);
   margin: 0 auto;
-  background-color: rgb(250, 250, 250);
+  background-color: linear-gradient(180.15deg, rgb(250, 250, 250) 8.06%, rgba(255, 255, 255, 0) 58.09%);
   background-image: url(../img/main/Ресурс\ 1\ 2.png);
   background-repeat: no-repeat;
   background-position: left;
@@ -1057,5 +1058,387 @@ body {
 @media (max-width: 723.89px) {
   .explanation-block__item {
     width: 100%;
+  }
+}
+
+.testimonials {
+  width: 100vw;
+}
+.testimonials__container {
+  position: relative;
+  background-image: url(../img/main/Vector\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  max-width: 1920px;
+  padding: 100px 60px 100px 60px;
+  gap: 40px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.testimonials__container::before {
+  content: url(../img/main/Vector\ 1.svg);
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  z-index: -1;
+}
+@media (max-width: 1199.89px) {
+  .testimonials__container::before {
+    content: url(../img/main/Vector\ 1\ mini.svg);
+    top: 191px;
+  }
+}
+@media (max-width: 723.89px) {
+  .testimonials__container::before {
+    top: 563px;
+  }
+}
+@media (max-width: 1199.89px) {
+  .testimonials__container {
+    background-size: 299px 245px;
+  }
+}
+@media (max-width: 723.89px) {
+  .testimonials__container {
+    height: 810px;
+    background-position: right bottom;
+    padding: 30px 20px 30px 20px;
+    gap: 20px;
+  }
+}
+.block-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 1;
+}
+@media (max-width: 723.89px) {
+  .block-testimonials {
+    gap: 20px;
+  }
+}
+.block-testimonials__title {
+  font-family: "Roboto Condensed";
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 150px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  z-index: 2;
+}
+@media (max-width: 1199.89px) {
+  .block-testimonials__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+    padding-left: 120px;
+  }
+}
+@media (max-width: 723.89px) {
+  .block-testimonials__title {
+    padding-left: 0px;
+  }
+}
+.comments-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.comments-block__item {
+  width: 100%;
+  max-width: 799px;
+  padding: 20px 0px 20px 0px;
+  gap: 40px;
+  border-radius: 20px;
+}
+@media (max-width: 723.89px) {
+  .comments-block__item {
+    padding: 0;
+  }
+  .comments-block__item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+}
+.comments-block__comment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 799px;
+  padding: 25px 30px 25px 106px;
+  gap: 10px;
+  border-radius: 11px;
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+.comments-block__comment::before {
+  position: absolute;
+  content: url(../img/main/Frame.png);
+  left: 30px;
+}
+@media (max-width: 723.89px) {
+  .comments-block__comment::before {
+    left: 20px;
+  }
+}
+@media (max-width: 1199.89px) {
+  .comments-block__comment {
+    max-width: 480px;
+    margin-left: 120px;
+  }
+}
+@media (max-width: 723.89px) {
+  .comments-block__comment {
+    margin-left: 0px;
+    padding-left: 96px;
+  }
+}
+.comments-block__text {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(33, 33, 33);
+  z-index: 2;
+}
+@media (max-width: 1199.89px) {
+  .comments-block__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18.2px;
+  }
+}
+.comments-block__avtor {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: left;
+  gap: 5px;
+  z-index: 2;
+}
+@media (max-width: 1199.89px) {
+  .comments-block__avtor {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 14.06px;
+  }
+}
+
+.subscribe {
+  width: 100vw;
+}
+.subscribe__container {
+  width: 100%;
+  max-width: 1920px;
+  height: 901px;
+  padding: 100px 60px 100px 60px;
+  gap: 10px;
+  border-top: 1px solid rgb(209, 209, 209);
+  margin: 0 auto;
+}
+@media (max-width: 1199.89px) {
+  .subscribe__container {
+    padding: 30px 20px 30px 20px;
+  }
+}
+.subscribe__block {
+  display: flex;
+  width: 100%;
+  max-width: 1805px;
+  padding: 100px 80px 100px 80px;
+  gap: 150px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: rgb(33, 33, 33);
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1199.89px) {
+  .subscribe__block {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    opacity: 0px;
+  }
+}
+.subscribe__title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.block-title__title {
+  font-family: "Roboto Condensed";
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 150px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+@media (max-width: 1199.89px) {
+  .block-title__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.81px;
+  }
+}
+.block-title__text {
+  display: flex;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: left;
+}
+@media (max-width: 1199.89px) {
+  .block-title__text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+  }
+}
+
+.forms-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.forms-block__text {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1199.89px) {
+  .forms-block__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+  }
+}
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-block__title {
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.88px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1199.89px) {
+  .form-block__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+  }
+}
+.form-block__text {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.44px;
+  text-align: left;
+  color: rgb(194, 194, 194);
+}
+@media (max-width: 1199.89px) {
+  .form-block__text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+  }
+}
+
+.email-form {
+  position: relative;
+  max-width: 898px;
+  max-height: 53px;
+  gap: 0px;
+  padding-right: 166px;
+}
+@media (max-width: 1471.89px) {
+  .email-form {
+    padding-right: 114px;
+  }
+}
+@media (max-width: 1199.89px) {
+  .email-form {
+    padding-right: 83px;
+  }
+}
+.email-form__input {
+  width: 100%;
+  max-width: 728px;
+  padding: 15px 30px 15px 30px;
+  gap: 10px;
+  border-radius: 5px 0px 0px 5px;
+  opacity: 0px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.44px;
+  text-align: left;
+  color: rgb(182, 182, 182);
+}
+@media (max-width: 1199.89px) {
+  .email-form__input {
+    max-width: 900px;
+    padding: 15px 30px 15px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+  }
+}
+.email-form__button {
+  position: absolute;
+  max-width: 166px;
+  padding: 15px 31px 15px 31px;
+  gap: 10px;
+  border-radius: 0px 5px 5px 0px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  background-color: rgb(245, 51, 63);
+  margin-left: -1px;
+  right: 0px;
+  cursor: pointer;
+}
+.email-form__button:hover {
+  color: rgb(114, 114, 114);
+}
+@media (max-width: 1471.89px) {
+  .email-form__button {
+    padding: 15px 5px 15px 5px;
+  }
+}
+@media (max-width: 1199.89px) {
+  .email-form__button {
+    padding: 15px 5px 15px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
   }
 }/*# sourceMappingURL=style.css.map */
