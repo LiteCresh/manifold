@@ -845,6 +845,9 @@
 			gap: 10px;
 			border-radius: 5px;
 		}
+		&:hover{
+			background-color: rgb(114, 114, 114);
+		}
 	}
 }
 .switch-goods {
@@ -1275,13 +1278,14 @@
 	&__container {
 		width: 100%;
 		max-width:1920px;
-		height: 901px;
 		padding: 100px 60px 100px 60px;
 		gap: 10px;
 		border-top: 1px solid rgba(209, 209, 209, 1);
 		margin: 0 auto;
+		margin-bottom: 100px;
 		@media(max-width: 1199.89px){
 			padding: 30px 20px 30px 20px;
+			margin-bottom: 60px;
 		}
 	}
 
@@ -1499,6 +1503,124 @@
 		}
 	}
 }
+
+.footer {
+	width: 100vw;
+	background-color: rgba(33, 33, 33, 1);
+
+	// .footer__container
+
+	&__container {
+		width: 100%;
+		max-width: 1920px;
+		padding: 0px 60px 0px 60px;
+		border-bottom: 1px solid rgba(194, 194, 194, 1);
+		margin: 0 auto;
+
+	}
+
+	// .footer__block
+
+	&__block {
+		display: flex;
+		flex-direction: row;
+		max-width: 1,800px;
+		padding: 80px 0px 80px 0px;
+		gap: 140px;
+		border-bottom: 1px;
+		@media(max-width: 1199.89px){
+			flex-direction: column;
+			max-width: 280px;
+			padding: 40px 0px 40px 0px;
+			gap: 60px;
+			margin: 0 auto;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {
+		max-width: 254px;
+		@media(max-width: 1199.89px){
+			margin: 0 auto;
+		}
+	}
+
+	// .footer__logo-img
+
+	&__logo-img {
+		width: 254px;
+		height: 38.91px;
+		@media(max-width: 1199.89px){
+			margin: 0 auto;
+			width: 180px;
+			height: 25.57px;
+		}
+	}
+
+	// .footer__menu
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		gap: 80px;
+		@media(max-width: 1199.89px){
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		gap: 40px;
+		margin-left: auto;
+		@media(max-width: 1199.89px){
+			margin: 0 auto;
+		}
+	}
+
+	// .footer__social-img
+
+	&__social-img {
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+	}
+}
+.menu-footer {
+	max-width: 192px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	@media(max-width: 1199.89px){
+		margin: 0 auto;
+	}
+
+	// .menu-footer__item
+
+	&__item {
+		font-family: "Roboto";
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 23.44px;
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		cursor: pointer;
+		@media(max-width: 1199.89px){
+			margin: 0 auto;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 16.41px;
+		}
+		&:hover{
+			color: rgb(114, 114, 114);
+		}
+
+	}
+}
+
 
 
 

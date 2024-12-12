@@ -830,6 +830,9 @@ body {
     border-radius: 5px;
   }
 }
+.goods-company__button:hover {
+  background-color: rgb(114, 114, 114);
+}
 
 .switch-goods {
   display: flex;
@@ -1242,15 +1245,16 @@ body {
 .subscribe__container {
   width: 100%;
   max-width: 1920px;
-  height: 901px;
   padding: 100px 60px 100px 60px;
   gap: 10px;
   border-top: 1px solid rgb(209, 209, 209);
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 @media (max-width: 1199.89px) {
   .subscribe__container {
     padding: 30px 20px 30px 20px;
+    margin-bottom: 60px;
   }
 }
 .subscribe__block {
@@ -1442,4 +1446,110 @@ body {
     font-weight: 500;
     line-height: 16.41px;
   }
+}
+
+.footer {
+  width: 100vw;
+  background-color: rgb(33, 33, 33);
+}
+.footer__container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 60px 0px 60px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  margin: 0 auto;
+}
+.footer__block {
+  display: flex;
+  flex-direction: row;
+  max-width: 1, 800px;
+  padding: 80px 0px 80px 0px;
+  gap: 140px;
+  border-bottom: 1px;
+}
+@media (max-width: 1199.89px) {
+  .footer__block {
+    flex-direction: column;
+    max-width: 280px;
+    padding: 40px 0px 40px 0px;
+    gap: 60px;
+    margin: 0 auto;
+  }
+}
+.footer__logo {
+  max-width: 254px;
+}
+@media (max-width: 1199.89px) {
+  .footer__logo {
+    margin: 0 auto;
+  }
+}
+.footer__logo-img {
+  width: 254px;
+  height: 38.91px;
+}
+@media (max-width: 1199.89px) {
+  .footer__logo-img {
+    margin: 0 auto;
+    width: 180px;
+    height: 25.57px;
+  }
+}
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+@media (max-width: 1199.89px) {
+  .footer__menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer__social {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+@media (max-width: 1199.89px) {
+  .footer__social {
+    margin: 0 auto;
+  }
+}
+.footer__social-img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.menu-footer {
+  max-width: 192px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1199.89px) {
+  .menu-footer {
+    margin: 0 auto;
+  }
+}
+.menu-footer__item {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.44px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+@media (max-width: 1199.89px) {
+  .menu-footer__item {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+  }
+}
+.menu-footer__item:hover {
+  color: rgb(114, 114, 114);
 }/*# sourceMappingURL=style.css.map */
