@@ -914,6 +914,7 @@ body {
 @media (max-width: 426.89px) {
   .marketing-block {
     flex-direction: column;
+    margin: 0;
   }
 }
 .marketing-block__title {
